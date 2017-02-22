@@ -1,0 +1,30 @@
+package datamodel.enums;
+
+/**
+ *
+ * @author Lazar Davidovic
+ */
+public enum EnumMessageType {
+    SUCCESS_CONNECT,
+    SUCCESS_FORWARD,
+    TEXT_FROM_CLIENT,
+    TEXT_FROM_SERVER,
+    VIDEO_STREAM_REQUEST_FROM_CLIENT,
+    VIDEO_STREAM_REQUEST_FROM_SERVER,
+    VIDEO_STREAM_RESPONSE_FROM_CLIENT,
+    VIDEO_STREAM_RESPONSE_FROM_SERVER,
+    AUDIO_REQUEST_FROM_CLIENT,
+    AUDIO_REQUEST_FROM_SERVER,
+    AUDIO_RESPONSE_FROM_CLIENT,
+    AUDIO_RESPONSE_FROM_SERVER,
+    AUDIO_MESSAGE_FROM_SERVER,
+    AUDIO_MESSAGE_FROM_CLIENT,
+    NEW_USER_DATA,
+    USERS_LIST,
+    END;
+
+    @Override
+    public String toString() {
+        return name();
+    }
+}
